@@ -57,8 +57,7 @@ jobs:
 
       - name: Terraform Format
         id: fmt
-        run: terraform fmt -check
-        continue-on-error: true
+        run: terraform fmt
 
       - name: Terraform Validate
         id: validate
@@ -81,4 +80,4 @@ jobs:
       - name: Terraform Destroy
         id: destroy
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-        run: terraform destroy --auto-approe
+        run: terraform destroy --auto-approve

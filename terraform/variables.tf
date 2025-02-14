@@ -11,7 +11,7 @@ variable "vpc-name" {
 }
 
 variable "igw-name" {
-  description = "Internet Gate Way Name for our Bastion server"
+  description = "Internet GateWay Name for our Bastion server"
   type        = string
   default     = "Bastion-igw"
 }
