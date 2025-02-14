@@ -57,7 +57,6 @@ variable "key_name" {
   description = "EC2 keypair"
   type        = string
   default     = "devops-2025"
-
 }
 
 variable "instance_name" {
