@@ -25,7 +25,7 @@ variable "subnet-name" {
 variable "rt-name" {
   description = "Route Table Name for our Bastion server"
   type        = string
-  default     = "Bastion-rt"
+  default     = "Bastion-route-table"
 }
 
 variable "sg-name" {
