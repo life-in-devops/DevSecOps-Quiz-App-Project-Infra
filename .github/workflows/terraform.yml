@@ -11,6 +11,17 @@ on:
       - main
     paths:
       - terraform/**
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "Choose Terraform Action (plan/apply/destroy)"
+        required: true
+        default: "plan"
+        type: choice
+        options:
+          - plan
+          - apply
+          - destroy    
 
 jobs:
   terraform:
